@@ -1,0 +1,320 @@
+:root {
+    --main_color:#614102;
+    ;
+  }
+  
+  html {
+    overflow-x : hidden;
+  }
+  
+  html, body {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  header {
+    padding: 10px 5%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F1B600;
+    position: fixed;
+  }
+
+  .header__logo {
+    position: absolute;
+    top: -50px;
+    right: 50;
+    width: 320px;
+    height: 200px;
+    transform: scale(0.5);
+  }
+  
+  .landing {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://smiltenesnovads.lv/wp-content/uploads/Slider_photo/Smiltene_Teperis-1.png");
+    background-size: cover;
+    padding: 0px 20px;
+    
+  }
+  
+  .landing h1 {
+    color: var(--main_color);
+    font-size: 20px;
+  }
+  
+  .landing p {
+    font-size: 20px;
+    line-height: 2;
+    word-spacing: 2px;
+  }
+
+  .fronttext {
+    position: absolute;
+    background-color:rgba(241,182,0,0.6);
+    width: 100vw;    
+    color: white;
+    text-align: center;
+  }
+  
+  
+  .externals {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: #eee;
+    padding: 10px;
+  }
+  
+  .externals div {
+    width: 350px;
+    max-width: 400px;
+    height: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  
+  .externals p {
+    color: rgba(175, 175, 175, 0.867);
+    line-height: 2;
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+  
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .title h1 {
+    font-size: 70px;
+    color: rgba(224, 224, 224, 0.867);
+    margin-top: 30px;
+    margin-bottom: 0px;
+    letter-spacing: -5px;
+  }
+  
+  .title div {
+    height: 200px;
+    flex-basis: 100%;
+    flex-shrink: 0;
+  }
+  
+  .title p {
+    margin: 0px;
+    margin-top: -40px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: rgb(80, 80, 80);
+  }
+  
+  
+  .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .novadinfo {
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .icon {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  i {
+    font-size: 40px;
+    color: #10cab7;
+  }  
+
+  
+
+  .content p {
+    color: rgba(134, 134, 134, 0.867);
+    font-size: 17px;
+    text-align: center;
+  }
+
+  
+  .content h2 {
+    text-align: center;
+  }
+  
+  .image {
+    display: none;
+  }
+  
+  .image img {
+    width: 700px;
+    height: 500px;
+    position: relative;
+    right: -60px;
+    border-radius: 10px;
+  }
+  
+  
+  .gray {
+    background-color: #eee;
+  }
+  
+  .vietas {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0px;
+    background-color: #eee;
+  }
+  
+  .turizminfo {
+    max-width: 420px;
+    height: fit-content;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+  }
+  
+  .turizminfo img {
+    width: 100%;
+    height: 70%;
+  }
+  
+  .turizminfo h2 {
+    color: black;
+    text-align: center;
+  }
+  .turizminfo p {
+    color: rgba(134, 134, 134, 0.867);
+    font-size: 17px;
+    text-align: center;
+
+  }
+  
+  .kontakt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px;
+  }
+  
+  .kontakt img {
+    width: 100vw;
+    height: 400px;
+    border-radius: 20px;
+ 
+  }
+  
+  .kontakt p {
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .kontakt p:last-of-type {
+    font-weight: 400;
+    color: rgba(66, 66, 66, 0.867);
+  }
+  
+  .kontakt p:first-of-type::after {
+    content: "";
+    display: block;
+    width: 200px;
+    border-bottom: 3px solid #F1B600;
+    position: relative;
+    top: 30px;
+    margin: auto;
+  }
+  
+  
+  
+  footer {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #F1B600;
+    color: #614102;
+    font-size: 18px;
+  }
+  
+  footer p {
+    margin: 0px;
+  }
+  
+  
+  @media (min-width: 1188px) {
+    .container {
+      flex-direction: row;
+    }
+  
+    .box {
+      width: 950px;
+    }
+  
+    .image {
+      display: flex;
+      align-items: center;
+      border-right: 100px solid #F1B600;
+    }
+  
+    .novadinfo {
+      flex-direction: row;
+    }
+  
+  
+    .content {
+      text-align: start;
+      padding: 0px 20px;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .kontakt {
+      padding: 0px 20px;
+      flex-direction: row;
+    }
+    .kontakt img {
+      width: 600px;
+      height: 400px;
+      border-radius: 20px;
+    }
+  }
+  

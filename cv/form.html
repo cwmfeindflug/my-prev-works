@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Reģistrācijas forma</title>
+  <style>
+  span.b {
+  display: inline-block;
+  width: 190px;
+  height: 15px;
+  padding: 5px;
+  }
+
+  </style>
+</head><!-- form -->
+<body>
+  <hr>
+  <h2>Reģistrācijas forma</h2>
+  <form action="/action_page.php" method="get" id="nameform" name="nameform">
+    <fieldset>
+      <label for="username">Ievietot vārdu:</label> <input type="text" id="username" name="username"> <label for="pass">Ievietot paroli:</label> <input type="password" id="pass" name="password" minlength="8" required="">
+    </fieldset><br>
+    <fieldset>
+      <legend><mark>Informacija par sevi</mark></legend><br>
+      <form>
+        <h4>Dzimums</h4><br>
+        <input type="radio" id="virietis" name="gender"> <label for="virietis">Virietis</label><br>
+        <input type="radio" id="sieviete" name="gender"> <label for="sieviete">Sieviete</label><br>
+        <br>
+        <form>
+          <label>Dzimšanas datums: <input type="date" name="bday"></label><br>
+          <h4>Adresse</h4><label for="city-select">Jusu pilseta</label> <select name="city" id="city-select">
+            <option value="none">
+              ----Izveleties----
+            </option>
+            <option value="riga">
+              Riga
+            </option>
+            <option value="jelgava">
+              Jelgava
+            </option>
+          </select>
+        </form>
+      </form>
+    </fieldset><br>
+    <fieldset>
+      <legend><mark>Jusu hobbies</mark></legend> Jus varat izvēleties jebkadu hobiju skaitu
+      <div>
+        <input type="checkbox"><label for="Ceļojumi"><span class="b">Ceļojumi</span></label> <input type="checkbox"><label for="Programmešana"><span class="b">Programmešana</span></label>
+      </div><input type="checkbox"><label for="Zimēt"><span class="b">Zimēt</span></label> <input type="checkbox"><label for="Spelet muzikas instrumentus"><span class="b">Spelet muzikas instrumentus</span></label>
+    </fieldset><br>
+    <br>
+    <fieldset>
+      <legend><mark>Kur tev gribas stradāt?</mark></legend> <label for="country-select">Valstīs:</label> <select id="country-select">
+        <option value="">
+          ----Izveleties----
+        </option>
+        <option value="latvija">
+          Latvijā
+        </option>
+        <option value="arzemes">
+          Ārzemes
+        </option>
+        <option value="noanswer">
+          Negribu teikt
+        </option><!-- /form -->
+      </select>
+    </fieldset>
+    <div>
+      <button type="submit" form="nameform" value="Submit">Sutit</button>
+    </div>
+  </form>
+</body>
+</html>
